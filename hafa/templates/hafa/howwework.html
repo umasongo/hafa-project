@@ -1,0 +1,44 @@
+{% extends "hafa/about_base.html" %}
+{% load staticfiles %}
+
+{% block abt %}
+
+<!--- -->	
+<div class="col-md-4 project1 fetur">
+    <h3>How we work</h3>
+    <img src="{% static "images/r1.jpg" %}" class="img-responsive" alt=""/>
+    <p>Cras malesuada aliquet lorem, ac varius arcu mattis egestas. Sed molestie tincidunt ex, ac finibus felis porttitor id. Fusce eleifend magna eget nibh pharetra condimentum sit amet molestie erat.</p>
+</div>
+<div class="col-md-4 project2 fetur">
+    <h3>More</h3>
+    <div class="event">
+        <h5><a href="#">Humanitarian and Development Programs</a></h5>
+        <p>Etiam efficitur porttitor tortor nec accumsan. Mauris et orci ante. Ut sed tortor rhoncus massa accumsan egestas. Sed fringilla at mauris sed ullamcorper.</p>
+    </div>
+    
+</div>
+<!--- -->
+
+{% endblock abt %}
+
+{% block etc %}
+
+<div class="who_are">
+ <div class="container">            
+     <h4></h4>
+     <p></p>
+ 
+     <div class="about-list">
+         <ul>
+             <li><a href="">Always free from repetition</a></li>
+             <li><a href="">Vestibulum rhoncus nibh quis dui fermentum iaculis.</a></li>
+             <li><a href="">The standard chunk of Lorem Ipsum</a></li>
+             <li><a href="">In consequat dolor in lorem egestas ultrices.</a></li>
+             <li><a href="">Aliquam sollicitudin eros id luctus consequat.</a></li>
+             <li class="none"><a href="">Always free from repetition</a></li>
+         </ul>       
+     </div>          
+ </div>
+</div>
+
+{% endblock etc %}

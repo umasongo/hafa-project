@@ -1,0 +1,35 @@
+{% extends "hafa/base.html" %}
+{% block content %}
+<!---->
+<div class="about">
+	
+    <div class="container">
+	    <div class="about-main">
+			<h3>About Us</h3>
+			<ol class="breadcrumb">
+			  <li><a href="#">Home</a></li>
+			  <li class="active">About Us</li>						  
+			</ol>
+		</div>
+        <div class="project_grids">
+            {% block abt %}
+            {% endblock abt %}
+            <div class="col-md-4 project3 fetur">
+                <h3>Areas</h3>
+                <ul>
+                    <li><a href="{% url "about"%}"> Who we are</a></li>
+                    <li><a href="{% url "whatwedo"%}"> What we do</a></li>
+                    <li><a href="{% url "howwework"%}"> How we work</a></li>
+                    <li><a href="{% url "wherewework"%}"> Where we work</a></li>
+                    <li><a href="{% url "getinvolved"%}"> Get involved</a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    {% block etc %}
+    {% endblock etc %}
+
+</div>
+<!---->
+{% endblock content %}

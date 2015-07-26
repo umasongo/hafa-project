@@ -1,0 +1,142 @@
+{% extends "hafa/base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+
+<div class="container">
+            <!---End-header--->
+            <!--start-image-slider---->
+            <div class="image-slider">
+                <!-- Slideshow 1 -->
+                <ul class="rslides" id="slider1">
+                    <li><img src="{% static "images/sl3.jpg" %}" alt=""></li>
+                    <li><img src="{% static "images/sl2.jpg" %}" alt=""></li>
+                    <li><img src="{% static "images/sl1.jpg" %}" alt=""></li>
+                </ul>
+                <!-- Slideshow 2 -->
+            </div>
+            <!--End-image-slider-- -->
+        </div>
+        <!-- -start-content-- -->
+        <div class="content">
+            <div class="container">
+                <div class="content-grids">
+                    <h2>HUMANITARIAN AGENCY FOR AFRICA</h2>	
+                    
+                </div>				 
+                    <div class="col-md-4 contnt-grids">
+                        <img src="{% static "images/w2.jpg" %}" class="img-responsive" alt=""/>
+                        <div class="caption2">
+                            <h3><a href="#">Health and Nutrition</a></h3>							 
+                        </div>
+                    </div>
+                    <div class="col-md-4 contnt-grids cntr">
+                        <img src="{% static "images/w1.jpg" %}" class="img-responsive" alt=""/>
+                        <div class="caption2">
+                            <h3><a href="#">Water, Sanitation and Hygiene</a></h3>							 
+                        </div>
+                    </div>
+                    <div class="col-md-4 contnt-grids">
+                        <img src="{% static "images/w3.jpg"%}" class="img-responsive" alt=""/>
+                        <div class="caption2">
+                            <h3><a href="#">Livelihoods and Markets</a></h3>							 
+                        </div>
+                    </div>
+                    <div class="col-md-4 contnt-grids">
+                        <img src="{% static "images/w3.jpg"%}" class="img-responsive" alt=""/>
+                        <div class="caption2">
+                            <h3><a href="#">Youth Empowerment</a></h3>                           
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!---start-content//-->
+        <div class="recent">
+            <div class="container">
+                <div class="recent-head">
+                    <h3>About us</h3>
+                    <p></p>
+                </div>
+                <div class="charitys">
+                    <div class="col-md-4 chrt_grid">
+                        <div class="chrty">
+                            <h3>Who we are</h3>
+                            <p>The Humanitarian Agency for Africa (HAFA) is an international African humanitarian agency dedicated to relief and development in Africa.</p>
+                            <p><a href="#">Continue reading...</a></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 chrt_grid middle">
+                        <div class="chrty">
+                            <h3>Our Rationale</h3>
+                            <p>HAFA was founded and exists because diverse challenges which Africans in everyday life. Every year, hundreds of millions of people around the world are affected by natural disasters and conflict.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 chrt_grid">
+                        <div class="chrty">
+                            <h3>Our Vision, Mission and Objectives</h3>
+                            <p><strong>Vision:</strong> Africa without injustices.</p>
+                            <p><strong>Mission:</strong> We are committed to ensuring that Africans affected by emergency situation resulting from conflicts</p>
+                            <p><a href="#">Continue reading...</a></p>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>		 
+        <!---->
+        <div class="join">
+            <div class="container">
+                <div class="col-md-9">
+                    <a href="{% url "about" %}">Click here for more about us</a>
+                </div>
+                
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!---->
+        <div class="featured">
+            <div class="container">
+                <div class="project_grids">
+                    <div class="col-md-4 project1 fetur">
+                        <h3>FEATURED PROJECTS</h3>
+                        <img src="{% static "images/r1.jpg"%}" class="img-responsive" alt=""/>
+                        <p>Cras malesuada aliquet lorem, ac varius arcu mattis egestas. Sed molestie tincidunt ex, ac finibus felis porttitor id. Fusce eleifend magna eget nibh pharetra condimentum sit amet molestie erat.</p>
+                    </div>
+                    <div class="col-md-4 project2 fetur">
+                        <h3>NEWS & EVENTS</h3>
+                        <div class="event">
+                            <h5><a href="#">12 November, 2014</a></h5>
+                            <p>Etiam efficitur porttitor tortor nec accumsan. Mauris et orci ante. Ut sed tortor rhoncus massa accumsan egestas. Sed fringilla at mauris sed ullamcorper.</p>
+                        </div>
+                        <div class="event">
+                            <h5><a href="#">12 November, 2014</a></h5>
+                            <p>Etiam efficitur porttitor tortor nec accumsan. Mauris et orci ante. Ut sed tortor rhoncus massa accumsan egestas. Sed fringilla at mauris sed ullamcorper.</p>
+                        </div>
+                        <div class="event">
+                            <h5><a href="#">12 November, 2014</a></h5>
+                            <p>Etiam efficitur porttitor tortor nec accumsan. Mauris et orci ante. Ut sed tortor rhoncus massa accumsan egestas. Sed fringilla at mauris sed ullamcorper.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 project3 fetur">
+                        <h3>PROGRAM AREAS</h3>
+                        <ul>
+                            <li><a href="#">> Child Protection</a></li>
+                            <li><a href="#">> Health and Nutrition</a></li>
+                            <li><a href="#">> HIV/AIDS</a></li>
+                            <li><a href="#">> Livelihoods</a></li>
+                            <li><a href="#">> Kidsave International</a></li>
+                            <li><a href="#">> Union Rescue Mission</a></li>
+                            <li class="last"><a href="#">> Child Attivities</a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!---->
+        
+        {% endblock content %}
+

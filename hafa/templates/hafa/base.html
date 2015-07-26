@@ -1,0 +1,144 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Humanitarian Agency for Africa (HAFA)</title>	
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+        </script>
+        <meta name="keywords" content="Hafa, Humanitarian Agency for Africa" />
+        <link href="{% static "css/bootstrap.css" %}" rel="stylesheet" type="text/css" media="all">
+        <link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css"  media="all" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+        <link rel="stylesheet" href="{% static "css/responsiveslides.css" %}">	
+        <script src="{% static "js/responsiveslides.min.js" %}"></script>
+        <script>
+            // You can also use "$(window).load(function() {"
+            $(function () {
+
+                // Slideshow 1
+                $("#slider1").responsiveSlides({
+                    maxwidth: 1600,
+                    speed: 600
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!-----start-header----->
+        <div class="header">
+            <!---start-container---->
+            <div class="container">
+                <!---start-top-header---->
+                <div class="top-header">
+                    <div class="top-header-left">
+                        <p>Humanitarian Agency for Africa</p>
+                    </div>
+                    <div class="top-header-right">
+                        <div class="top-header-contact-info">                            
+                            <!--<span></span>-->
+                        </div>
+                        <div class="top-header-contact-account">
+                            <div class="social">
+                                <ul>
+                                    <li><a href="#"><i class="facebook"></i></a></li>
+                                    <li><a href="#"><i class="twitter"></i></a></li>
+                                    <li><a href="#"><i class="dribble"></i></a></li>	
+                                    <li><a href="#"><i class="google"></i></a></li>										
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <!---End-top-header -->
+                <!----start-main-header--- -->
+                <div class="main-header">
+                    <div class="logo">
+                        <img src="{% static "images/hafa.jpg" %}" width="80" height="45" title="logo" />
+                    </div>
+                    <div class="top-nav">
+                        <span class="menu"></span>
+                        <ul>
+                            <li><a href="{% url "index" %}">Home</a></li>
+                            <li><a href="{% url "about" %}">About</a></li>
+                            <li><a href="{% url "mission" %}">Mission</a></li>
+                            <li><a href="{% url "services" %}">Services</a></li>
+                            <li><a href="{% url "blog" %}">Blog</a></li>
+                            <li><a href="{% url "contact" %}">Contact</a></li>                            
+                        </ul>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                <div class="grid_12">
+                    <img src="{% static "images/clr.jpg" %}" class="img-responsive">
+                </div>
+                <!-- script-for-menu -->
+                <script>
+                    $("span.menu").click(function () {
+                        $(".top-nav ul").slideToggle("slow", function () {
+                        });
+                    });
+                </script>
+                <!-- script-for-menu -->
+
+
+            </div>
+            <!----End-main-header-- -->
+        </div>
+        <div class="clearfix"> </div>
+               
+        {% block content %}
+        {% endblock %}        
+        
+        <!---->
+        <div class="footer">
+            <div class="container">				 	
+                <div class="col-md-3 ftr_navi ftr">
+                    <h3>NAVIGATION</h3>
+                    <ul>
+                        <li><a href="{% url "index" %}">Home</a></li>
+                        <li><a href="{% url "about" %}">About</a></li>
+                        <li><a href="{% url "mission" %}">Mission</a></li>
+                        <li><a href="{% url "services" %}">Services</a></li>
+                        <li><a href="{% url "blog" %}">Blog</a></li>
+                        <li><a href="{% url "contact" %}">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 ftr_navi ftr">
+                    <h3>MEMBERS</h3>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Platinum Support</a></li>
+                        <li><a href="#">Gold Support</a></li>						
+                        <li><a href="#">Standard Support</a></li>
+                        <li><a href="#">Training</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 get_in_touch ftr">
+                    <h3>GET IN TOUCH</h3>
+                    <p>Sentamu Road, Lubya Parish,</p>
+                    <p>Lubaga Division, Kampala City,</p>
+                    <p>P.O.Box 2501,</p>
+                    <p>Kampala Uganda (East Africa)</p>
+                    <p>(+256) 414 59 982</p>
+                    <p>info@hafa.ug</p>
+                    <a href="mailto:mail@mlampah.com">www.hafa.org</a>
+                </div>
+                <div class="col-md-3 ftr-logo">
+                    <a href="index.html"><img src="{% static "images/hafa.jpg" %}" width="80" height="45" alt=""/></a>
+                    <p>&copy; 2015 All Rights Reseverd </p>
+                    <p>Design by <a href="http://hafa.org/">Hafa</a> </p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!---End-container---->
+    </body>
+</html>
+
